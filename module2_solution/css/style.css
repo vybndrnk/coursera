@@ -1,0 +1,89 @@
+/********** Base styles **********/
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, p {
+	font-family: arial, verdana, sans-serif;
+}
+
+h1 {
+	font-size: 1.75em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.25em;
+	text-align: center;
+	width: 120px;
+	border: 1px solid #000;
+	position: absolute;
+	top: 16px;
+	right: 15px;
+	margin: 0;
+	padding: 2px;
+}
+
+p {
+	font-size: 1em;
+}
+
+.row {
+	width: 100%;
+}
+
+section {
+	position: relative;
+	padding: 0 15px;
+}
+
+section > p {
+	padding:  35px 10px 5px;
+	background-color: #DCDCDC;
+	border: 1px solid #000;
+}
+	
+section:nth-child(1) h2 {
+	background-color: #D59898;
+}
+
+section:nth-child(2) h2 {
+	background-color: #C14543;
+	color: #fff;
+}
+
+section:nth-child(3) h2 {
+	background-color: #E5D198;
+}
+
+
+/********** Medium Queries **********/
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		width: 33.33%;
+		float: left;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	section {
+		float: left;
+		width: 100%;
+	}
+}
